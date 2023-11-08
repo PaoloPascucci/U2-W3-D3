@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const url = "https://striveschool-api.herokuapp.com/books";
-  const imgs = document.querySelectorAll("card-img-top");  
-  const titles = document.querySelectorAll("card-title");
-  const prices = document.querySelectorAll("card-text");
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
